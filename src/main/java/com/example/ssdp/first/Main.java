@@ -1,0 +1,16 @@
+package com.example.ssdp.first;
+
+public class Main {
+    public static void main(String[] args) {
+        ShoppingCart cart = new ShoppingCart();
+
+        cart.setPaymentStrategy(new CreditCardPayment());
+        cart.checkout(100.0);
+
+        cart.setPaymentStrategy(new PayPalPayment());
+        cart.checkout(50.0);
+
+        cart.setPaymentStrategy(new CryptoPayment());
+        cart.checkout(200.0);
+    }
+}
