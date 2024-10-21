@@ -3,6 +3,6 @@ module com.example.ssdp {
     requires javafx.fxml;
 
 
-    opens com.example.ssdp to javafx.fxml;
-    exports com.example.ssdp;
+    opens com.example.ssdp.first to javafx.fxml;
+    exports com.example.ssdp.first;
 }
